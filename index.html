@@ -1,0 +1,106 @@
+<html>
+<head>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"></link>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f0f0f0;
+        }
+        .card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 10px;
+        }
+        .title {
+            font-size: 24px;
+            font-weight: 700;
+            color: #333;
+        }
+        .subtitle {
+            font-size: 18px;
+            font-weight: 500;
+            color: #666;
+        }
+        .icon {
+            width: 40px;
+            height: 40px;
+            background-color: #e0e0e0;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
+        }
+        .chart {
+            width: 100%;
+            height: 200px;
+            background-color: #e0e0e0;
+            border-radius: 10px;
+        }
+        .button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-align: center;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body class="p-10">
+    <div class="grid grid-cols-3 gap-4">
+        <div class="col-span-3 flex items-center">
+            <div class="title">Executive Dashboard</div>
+            <div class="ml-auto subtitle">Milestone 3983</div>
+        </div>
+        <div class="col-span-1 card">
+            <div class="flex items-center">
+                <div class="icon"><i class="fas fa-calendar-week"></i></div>
+                <div class="subtitle">Current Week</div>
+            </div>
+            <div class="mt-4">
+                <div class="flex items-center">
+                    <div class="icon"><i class="fas fa-user"></i></div>
+                    <div class="subtitle">Current Licenses</div>
+                </div>
+                <div class="flex items-center mt-4">
+                    <div class="icon"><i class="fas fa-tasks"></i></div>
+                    <div class="subtitle">Quick Priorities</div>
+                </div>
+                <div class="flex items-center mt-4">
+                    <div class="icon"><i class="fas fa-socks"></i></div>
+                    <div class="subtitle">Sock Priorities</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-span-2 card">
+            <div class="title">Current Week Focus</div>
+            <div class="flex mt-4">
+                <div class="icon"><i class="fas fa-chart-pie"></i></div>
+                <div class="icon"><i class="fas fa-chart-line"></i></div>
+                <div class="icon"><i class="fas fa-chart-bar"></i></div>
+            </div>
+        </div>
+        <div class="col-span-1 card">
+            <div class="title">Quick Link Achievements</div>
+            <div class="chart mt-4"></div>
+        </div>
+        <div class="col-span-1 card">
+            <div class="title">Quick Links</div>
+            <div class="button mt-4">Quick</div>
+        </div>
+        <div class="col-span-1 card">
+            <div class="title">Recent Priorities</div>
+            <div class="chart mt-4"></div>
+        </div>
+        <div class="col-span-1 card">
+            <div class="title">Top Priorities</div>
+            <div class="chart mt-4"></div>
+        </div>
+    </div>
+</body>
+</html>
